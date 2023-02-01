@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR" data-bs-theme="dark">
+<html lang="pt-BR">
   <head>
     
     <meta charset="utf-8">
@@ -20,8 +20,9 @@
       gtag('config', 'G-QML2ZZBBXS');
     </script>
     <!-- Google tag (gtag.js) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
     <!-- Custom styles for this template -->
@@ -37,16 +38,18 @@
       }
       body {overflow-y: scroll}
     </style>
-  <div class="container">
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-        <h1 class="fs-4">Simple header</h1>
-      </a>
+
+  <div class="container sticky-top bg-auto opacity-100" >
+<!-- <nav class="navbar navbar-default navbar-fixed-top"> -->
+  <!-- <div class=" container"> -->
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom text bg-auto-reverse">
+      <!-- <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg> -->
+        <h1 class="fs-4 d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">Titulo</h1>
+      <!-- </a> -->
 
       <ul class="nav nav-pills">
         <li class="nav-item"><a href="#jornada" class="nav-link">Jornada</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
         <li class="nav-item"><a href="#sociais" class="nav-link">Sociais</a></li>
       </ul>
@@ -55,14 +58,12 @@
         <div class="btn-group">
           <button class="btn btn-light" data-bs-theme-value="light">
               <svg class="bi me-2 opacity-50 theme-icon"><use href="#sun-fill"></use></svg>
-              Light
+              Claro
               <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
-          </button>
-        <!-- </div>
-        <div class="btn"> -->
+          </button>     
           <button class="btn btn-light" data-bs-theme-value="dark">
               <svg class="bi me-2 opacity-50 theme-icon"><use href="#moon-stars-fill"></use></svg>
-              Dark
+              Escuro
               <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
           </button>
           <button class="btn btn-light" data-bs-theme-value="auto">
@@ -75,8 +76,9 @@
 
     </header>
   </div>
+<!-- </nav> -->
 
-<main class="container">
+<main class="container content">
 
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="check2" viewBox="0 0 16 16">
@@ -94,8 +96,6 @@
         <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
     </symbol>
   </svg>
-
-  
 
   <div class="p-4 p-md-5 mb-4 rounded text-bg-reverse">
     <div class="col-md-6 px-0">
@@ -120,19 +120,7 @@
           <li>Second list item with a longer description</li>
           <li>Third list item to close it out</li>
         </ul>
-        
-      <article class="blog-post">
-        <h2 class="blog-post-title mb-1"></h2>
-        
-        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-        <blockquote>
-          <p>Longer quote goes here, maybe with some <strong>emphasized text</strong> in the middle of it.</p>
-        </blockquote>
-        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-       
-        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
-      </article>
-
+  
       <article class="blog-post">
         <h2 class="blog-post-title mb-1">New feature</h2>
         
@@ -192,5 +180,6 @@
   </footer>
 </div>
     <script src="https://auct.github.io/uajax/demo/dark-theme-switcher.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
