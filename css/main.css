@@ -50,7 +50,7 @@
 }
 
 img {
-  max-width: 100%
+  max-width: 100%;
 }
 
 .bi {
@@ -61,6 +61,20 @@ img {
 }
 
 body {
-  overflow-y: scroll
+  overflow-y: scroll;
 }
 
+textarea{
+  resize: none;
+}
+
+/* Esconde o scrollbar para o Chrome*/
+.stop-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Esconde o scrollbar para o IE, Edge e Firefox */
+.stop-scroll {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
