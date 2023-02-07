@@ -1,17 +1,35 @@
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
-
-// Get the header
-var header = document.getElementById("myHeader");
-
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
+function sum(a,b) {
+  var a;
+  var b;
+  return a+b;
 }
+
+function sub(a,b) {
+  var a;
+  var b;
+  return a-b;
+}
+
+function mult(a,b) {
+  var a;
+  var b;
+  return a*b;
+}
+
+function divide(a,b) {
+  var a;
+  var b;
+  return a/b;
+}
+
+function pegaInfoForm() {
+  var nome = document.getElementById('nome-form').value;
+  var email = document.getElementById('email-form').value;
+  var msg = document.getElementById('msg-form').value;
+  var dados = [nome,email,msg];
+  return console.write(dados);
+}
+
+// function enviaArray() {
+//   document.getElementById('btn-envia').onclick()
+// }

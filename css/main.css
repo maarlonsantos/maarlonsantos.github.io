@@ -75,6 +75,6 @@ textarea{
 
 /* Esconde o scrollbar para o IE, Edge e Firefox */
 .stop-scroll {
-  -ms-overflow-style: none;  /* IE and Edge */
+  -ms-overflow-style: none;  /* IE e Edge */
   scrollbar-width: none;  /* Firefox */
 }
